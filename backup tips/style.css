@@ -1,0 +1,87 @@
+/* ==== INDEX.HTML */
+
+/* ==== Body Style ==== */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+header {
+  background-color: bisque;
+}
+.head-wrapper {
+  display: grid;
+  max-width: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  margin: auto;
+}
+.head-wrapper div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+/*   div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid green;
+      }*/
+
+/* header div {
+        border: 2px solid purple;
+        display: inline-block;
+      }*/
+span {
+  background-color: lightcoral;
+}
+/* span is used to create a background for the text */
+/*=== Header Style ===*/
+.header-nav li {
+  display: inline-block;
+  margin-right: 10%;
+  list-style: none;
+}
+.header-nav li a {
+  text-decoration: none;
+}
+table {
+  width: 40%;
+  max-width: 50%;
+  margin: auto;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 10%;
+  text-align: center;
+}
+
+/*==== Footer Style ===*/
+footer {
+  background: gold;
+  border: 2px solid black;
+  color: red;
+}
+/*===== CONTACT.HTML====*/
+
+/*==== Form Style ====*/
+
+.label-container {
+  display: flex;
+  padding: 5px 0;
+}
+.label-container input {
+  flex: 0.2;
+}
+form {
+  background-color: aquamarine;
+  max-width: 300px;
+}

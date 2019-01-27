@@ -1,102 +1,104 @@
 /* === HEADER STYLE ==== */
 
-.header-layout{
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 10px auto 10px auto;
-
+.header-layout {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 10px auto 10px auto;
 }
-.headers{
-    margin: 10px;
-    background-color: bisque;
+.headers {
+  margin: 10px;
+  background-color: bisque;
 }
-.navbar{
-    list-style: none;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: aquamarine;
-    margin:10px;
+.navbar {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  background-color: black;
 }
-.navbar li{
-    padding: 10px;
-    margin: 10px;
-    background-color: azure;
-    box-sizing: border-box;
+.navbar li {
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  justify-content: space-around;
+  float: left;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.navbar li a{
-    text-decoration: none;
+.navbar li:hover {
+  background: purple;
+  transition: 0, 5s;
+  text-transform: uppercase;
+}
+.navbar li a {
+  text-decoration: none;
 }
 
 /* === SECTIONS STYLE ==== */
-#section1{
-    text-align: center;
-    font-variant: small-caps;
+#section1 {
+  text-align: center;
+  font-variant: small-caps;
 }
-.sections-layout{
-    /*background-color: lightgray;*/
-    margin: 20px auto 0 auto;
-    padding: 10px 30px;
-    line-height: 1.5;
-    display: flex;
-    max-width: 80%;
+.sections-layout {
+  /*background-color: lightgray;*/
+  margin: 20px auto 0 auto;
+  padding: 10px 30px;
+  line-height: 1.5;
+  display: flex;
+  width: 80%;
 }
-.section1{
-    flex:1;
-    background-color: red;
-    padding-left: 10px;
-    margin-right: 15px;
-    border-radius: 5%;
-        }
-.section2{
-flex:1;
- background-color: red;
-    padding-left: 10px;
-    margin-right: 15px;
-        border-radius: 5%;
-
-    }
-.section3{
-    flex: 1;
-    background-color: red;
-    padding-left: 10px;
-    margin-right: 15px;
-    border-radius: 5%;
+.section1 {
+  flex: 1;
+  background-color: red;
+  padding-left: 10px;
+  margin-right: 15px;
+  border-radius: 5%;
+}
+.section2 {
+  flex: 1;
+  background-color: red;
+  padding-left: 10px;
+  margin-right: 15px;
+  border-radius: 5%;
+}
+.section3 {
+  flex: 1;
+  background-color: red;
+  padding-left: 10px;
+  margin-right: 15px;
+  border-radius: 5%;
 }
 /* ===== FOOTER SYLE ====*/
-.footer-navbar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style-type: square;
-    justify-content: space-evenly;
-    background-color: black;
-    padding: 10px;
-    }
-.footer-navbar li a{
-    text-decoration: none;
-    color: white;
+.footer-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: square;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 10px;
+}
+.footer-navbar li a {
+  text-decoration: none;
+  color: white;
 }
 /* ====> SKILLS PAGE STYLE <=====*/
 /* ==== SKILLS STYLE ==== */
-.skills-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-    background-color: gray;
-    flex-wrap: wrap;
-    
+.skills-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: gray;
+  flex-wrap: wrap;
 }
-.skills{
-    width: 150px;
-    height: 100px;
-    background-color: lightsalmon;
-    text-align: center;
-margin-bottom: 20px;   
-margin-right:15px;
-margin-left: 15px; 
-margin-top: 20px;
-
+.skills {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
 }

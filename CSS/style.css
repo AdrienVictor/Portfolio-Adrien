@@ -15,7 +15,9 @@ header {
 img {
   width: 200px;
   object-fit: fill;
-  border-radius: 45%;
+}
+.profilepicture {
+  border-radius: 50%;
 }
 
 .header-container {
@@ -79,9 +81,9 @@ img {
   font-variant: small-caps;
   margin: 10px 10px;
 }
-p {
+.aboutme-para {
   text-align: center;
-  margin: auto 15px auto 15px;
+  margin: 20px 15px;
 }
 #mypassions {
   text-align: center;
@@ -95,7 +97,7 @@ p {
 }
 .sections-container {
   /* background-color: lightgray; */
-  margin: 20px auto 0px auto;
+  margin: 20px auto 20px auto;
   padding: 10px 30px;
   line-height: 1.5;
   display: flex;
@@ -120,14 +122,14 @@ p {
   border-radius: 5%;
   border: 2px solid gray;
 }
-/* .mypassionslogos {
-  display: block;
-  justify-content: right;
-  margin: auto;
-} */
+.mypassionslogos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 i {
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px;
 }
 .section3 {
@@ -154,6 +156,7 @@ i {
   list-style-type: square;
   justify-content: space-evenly;
   background-color: black;
+  opacity: 0.8;
   padding: 10px;
 }
 .footer-navbar li a {
@@ -164,15 +167,68 @@ i {
 /* ==== SKILLS STYLE ==== */
 .skills-container {
   display: flex;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   width: 70%;
   flex-wrap: wrap;
   margin: auto;
 }
-.skills {
+.html-skill {
+  width: 150px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px 20px;
+  padding: 15px;
+}
+.css-skill {
   width: 150px;
   height: 100px;
   background-color: lightsalmon;
   text-align: center;
   margin: 15px auto;
   padding: 15px;
+}
+.js-skill {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+}
+.react-skill {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+}
+.redux-skill {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+}
+.node-skill {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+}
+.mongo-skill {
+  width: 150px;
+  height: 100px;
+  background-color: lightsalmon;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+}
+/* ==== Skills Logos Style ==== */
+.html-logo {
+  width: 100px;
 }

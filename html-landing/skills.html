@@ -3,14 +3,24 @@
   <head>
     <title>adrien-fernandez-portfolio</title>
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <header>
-      <div class="header-layout">
+      <div class="header-container">
         <div class="header-profile">
           <div class="headers">
-            <img src="../ressources/images/mypicture.jpg" alt="my picture" />
+            <img
+              class="profilepicture"
+              src="../ressources/images/mypicture.jpg"
+              alt="my picture"
+            />
           </div>
           <div class="headers">
             <h1>
@@ -19,14 +29,14 @@
             </h1>
           </div>
         </div>
-        <div class="integrify-logo">
+        <div>
           <img src="../ressources/images/logo.svg" alt="integrify-logo" />
         </div>
       </div>
 
       <ul class="navbar">
         <li><a href="../homepage.html"> Home </a></li>
-        <li><a href="./skills.html"> Skills</a></li>
+        <li><a href="../html-landing/skills.html"> Skills</a></li>
         <li>Projects</li>
         <li>Contact</li>
       </ul>
@@ -38,8 +48,14 @@
     </p>
     <hr />
     <div class="skills-container">
-      <div class="skills">
-        <details>
+      <div class="html-skill">
+        <img
+          class="html-logo"
+          src="../ressources/images/HTML5_Badge.svg"
+          alt="html5-logo"
+        />
+        <h2>HTML</h2>
+        <!-- <details>
           <summary>html</summary>
           <ul>
             <li>subskill1</li>
@@ -47,14 +63,14 @@
             <li>subskill3</li>
             <li>subskill4</li>
           </ul>
-        </details>
+        </details> -->
       </div>
-      <div class="skills"><h2>CSS</h2></div>
-      <div class="skills"><h2>JavaScript</h2></div>
-      <div class="skills"><h2>react</h2></div>
-      <div class="skills"><h2>redux</h2></div>
-      <div class="skills"><h2>node</h2></div>
-      <div class="skills"><h2>mongodb</h2></div>
+      <div class="css-skill"><h2>CSS</h2></div>
+      <div class="js-skill"><h2>JavaScript</h2></div>
+      <div class="react-skill"><h2>react</h2></div>
+      <div class="redux-skill"><h2>redux</h2></div>
+      <div class="node-skill"><h2>node</h2></div>
+      <div class="mongo-skill"><h2>mongodb</h2></div>
     </div>
     <hr />
     <footer>

@@ -167,68 +167,83 @@ i {
 /* ==== SKILLS STYLE ==== */
 .skills-container {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
   width: 70%;
   flex-wrap: wrap;
   margin: auto;
 }
-.html-skill {
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   width: 150px;
-  background-color: lightsalmon;
+  height: 200px;
+  /* background-color: lightsalmon; */
   text-align: center;
-  margin: 15px 20px;
-  padding: 15px;
+  margin: 15px 10px;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0, 1);
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.4);
 }
-.css-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
-.js-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
-.react-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
-.redux-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
-.node-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
-.mongo-skill {
-  width: 150px;
-  height: 100px;
-  background-color: lightsalmon;
-  text-align: center;
-  margin: 15px auto;
-  padding: 15px;
-}
+
 /* ==== Skills Logos Style ==== */
+.skill-box h2 {
+  margin-top: 15px;
+}
 .html-logo {
+  width: 80px;
+}
+.css-logo {
   width: 100px;
+}
+.js-logo {
+  width: 100px;
+}
+.react-logo {
+  width: 100px;
+  margin-bottom: 8%;
+}
+.redux-logo {
+  width: 100px;
+}
+.node-logo {
+  width: 100px;
+}
+.mongo-logo {
+  width: 130px;
+  margin-bottom: 20%;
+}
+progress {
+  width: 120px;
+  height: 20px;
+  margin-top: 10px;
+}
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress:not([value]) {
+  /* Styling here */
 }

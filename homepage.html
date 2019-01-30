@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>adrien-fernandez-portfolio</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <header>
       <div class="header-container">
@@ -17,35 +18,43 @@
           <div class="headers">
             <img
               class="profilepicture"
-              src="./ressources/images/mypicture.jpg"
+              src="../ressources/images/mypicture.jpg"
               alt="my picture"
             />
           </div>
           <div class="headers">
             <h1>
               <strong>Adrien Fernandez</strong><br />
-              <em>French</em><br /><em>Junior Full Stack Developer</em>
+              <em>Junior Full Stack Developer</em>
             </h1>
           </div>
         </div>
-        <div>
-          <img src="./ressources/images/logo.svg" alt="integrify-logo" />
+        <div class="header-navbar">
+          <ul class="navbar">
+            <li><a href="../homepage.html"> Home </a></li>
+            <li><a href="../html-landing/skills.html"> Skills</a></li>
+            <li><a href="../html-landing/projects.html"> Projects</a></li>
+            <li><a href="../html-landing/contact.html"> Contact</a></li>
+          </ul>
         </div>
       </div>
-
-      <ul class="navbar">
-        <li><a href="./homepage.html"> Home </a></li>
-        <li><a href="./html-landing/skills.html"> Skills</a></li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
     </header>
-    <h1 id="home">home</h1>
-    <p id="myintro">
-      Welcome to my Portfolio! I hope you enjoy the tour. Get to know me and
-      check my skills and projects.<br />Do not forget to leave your contacts if
-      you want to be in touch.
-    </p>
+    <div class="banner contact-banner">
+      <div class="intro-container contact-intro-container">
+        <h1 id="h1-intro">
+          Welcome to my <span id="span-portfolio">Portfolio</span>
+        </h1>
+        <hr class="hr-intro hr-contact" />
+        <p class="intro-p1 intro-contact-p1">
+          I hope you enjoy the tour. <br />
+          Get to know me and check my Skills and Projects.
+        </p>
+        <p class="intro-p2 intro-contact-p2">
+          Do not forget to leave your contacts, <br />
+          if you want to be in touch.
+        </p>
+      </div>
+    </div>
     <hr />
     <div class="sections-container">
       <div class="section1">
@@ -81,11 +90,11 @@
 
     <footer>
       <ul class="footer-navbar">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Medium</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://github.com/AdrienVictor">GitHub</a></li>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">Medium</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
       </ul>
     </footer>
   </body>

@@ -1,79 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-/* ==== BODY STYLE ====  */
-header {
+/* ==== BODY STYLE ======================================================== */
+/* header {
   background-image: url(../ressources/images/5149.jpg);
   width: 100%;
-}
+} */
 
-/* === HEADER STYLE ==== */
-img {
-  width: 200px;
-  object-fit: fill;
-}
+/* === HEADER STYLE ========================================================= */
 .profilepicture {
-  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  border-radius: 0;
+  margin-right: 20px;
+  border: 3px dashed black;
 }
 
 .header-container {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
-  margin: 10px auto 10px auto;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 40px auto auto auto auto 40px;
+  grid-template-areas: ". . header-profile header-navbar . .";
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .header-profile {
+  grid-area: header-profile;
   display: flex;
-  margin-right: auto;
-}
-
-.headers {
-  margin: 10px;
   align-items: center;
-  display: flex;
 }
-/* .integrify-logo {
-  align-self: ;
-} */
+.header-navbar {
+  grid-area: header-navbar;
+  align-self: baseline;
+  justify-content: center;
+}
 .navbar {
   list-style: none;
-  width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: black;
+  border-radius: 20px;
+  height: 40px;
 }
 .navbar li {
   padding: 10px 10px 10px 10px;
   margin: 0 auto 0 auto;
-  justify-content: space-around;
-  float: left;
-  color: white;
 }
-.navbar li:hover {
-  background: purple;
+.navbar li a:hover {
+  color: violet;
   transition: 0, 5s;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .navbar li a {
   text-decoration: none;
   color: white;
 }
 
-/* === SECTIONS STYLE ==== */
-#home {
+/* === SECTIONS STYLE ======================================================= */
+#h1-home {
+  font-variant: small-caps;
+  font-size: 3rem;
+  text-align: auto;
+}
+#h1-skills {
   font-variant: small-caps;
   margin-left: 15px;
   font-size: 3rem;
   text-align: auto;
 }
-#myintro {
+#intro-homepage {
   margin: 10px 10px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #aboutme {
@@ -117,8 +120,8 @@ img {
   flex: 1;
   /* background-color: red; */
   /* padding-left: 10px; */
-  /* margin-right: 15px; */
-  /* margin-left: 15px; */
+  margin-right: 15px;
+  margin-left: 15px;
   border-radius: 5%;
   border: 2px solid gray;
 }
@@ -148,32 +151,48 @@ i {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* ===== FOOTER SYLE ====*/
+/* ===== FOOTER SYLE ======================================================*/
 .footer-navbar {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  justify-content: center;
-  list-style-type: square;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
-  opacity: 0.8;
-  padding: 10px;
+  /* opacity: 0.8; */
+  /* padding: 10px; */
+  margin-top: 50px;
 }
-.footer-navbar li a {
+.footer-navbar i {
   text-decoration: none;
   color: white;
 }
-/* ====> SKILLS PAGE STYLE <=====*/
-/* ==== SKILLS STYLE ==== */
+.footer-integrify {
+  height: 50px;
+  width: auto;
+}
+.fa-phone {
+  font-size: 20px;
+}
+.fab {
+  font-size: 30px;
+}
+/* ===========================> SKILLS PAGE <=============================*/
+/* ==== SKILLS STYLE ==================================================== */
+#myskills-intro {
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .skills-container {
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: center;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
-  width: 70%;
+  width: 80%;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 50px auto;
 }
 .skill-box {
   display: flex;
@@ -184,10 +203,10 @@ i {
   height: 200px;
   /* background-color: lightsalmon; */
   text-align: center;
-  margin: 15px 10px;
+  margin: 20px 30px;
   padding: 5px;
-  border: 2px solid rgb(0, 0, 0, 1);
-  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.4);
+  border: 2px solid gray;
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* ==== Skills Logos Style ==== */
@@ -198,17 +217,16 @@ i {
   width: 80px;
 }
 .css-logo {
-  width: 100px;
+  width: 80px;
 }
 .js-logo {
-  width: 100px;
+  width: 80px;
 }
 .react-logo {
-  width: 100px;
-  margin-bottom: 8%;
+  width: 120px;
 }
 .redux-logo {
-  width: 100px;
+  width: 80px;
 }
 .node-logo {
   width: 100px;
@@ -246,4 +264,242 @@ progress[value]::-webkit-progress-value {
 }
 progress:not([value]) {
   /* Styling here */
+}
+/* =========================> PROJECTS PAGE <================================ */
+.project-container {
+  display: grid;
+  grid-template-columns: 60px auto auto 60px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". title infos ."
+    ". picture infos ."
+    ". icons infos ."
+    ". footer infos .";
+  justify-content: center;
+  grid-gap: 10px 10px;
+  margin-top: 20px;
+}
+.portfolio-title {
+  grid-area: title;
+  /* justify-self: stretch; */
+  padding: 10px 10px;
+  text-align: center;
+  border-top: 2px solid gray;
+}
+.portfolio-picture {
+  grid-area: picture;
+  padding: auto;
+  display: grid;
+}
+.portfolio-infos {
+  grid-area: infos;
+  /* padding: 10px 20px; */
+  align-self: stretch;
+  display: flex;
+  border-right: 2px solid gray;
+}
+.portfolio-footer {
+  grid-area: footer;
+  align-self: end;
+  padding: 10px 10px;
+  border-bottom: 2px solid gray;
+}
+.portfolio-icons {
+  grid-area: icons;
+  display: flex;
+  justify-content: space-evenly;
+}
+.portfolio-infos-para {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 10px 10px;
+  align-self: stretch;
+  border-spacing: 10px;
+}
+.fa-desktop {
+  font-size: 100px;
+  color: black;
+}
+.fa-tablet-alt {
+  font-size: 100px;
+  color: black;
+}
+.fa-mobile-alt {
+  font-size: 100px;
+  color: black;
+}
+.portfolio-title {
+}
+#portfolio-badge {
+  object-fit: fill;
+  width: 750px;
+  height: auto;
+}
+#h2-ongoing-projects {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  width: 30%;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+#h2-delivered-projects {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  width: 30%;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+#h1-projects {
+  font-variant: small-caps;
+  font-size: 3rem;
+  text-align: auto;
+}
+#intro-projects {
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* ==========================> CONTACT PAGE <================================ */
+.contact-banner {
+  background-image: url(../ressources/images/5149.jpg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.hr-intro {
+  height: 10px;
+  width: 50px;
+  background: yellow;
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.contact-intro-container {
+  margin-left: 5%;
+  padding: 15px;
+}
+/* ======================== CONTACT GRID STYLE ============================== */
+.contact-container {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: 5% auto auto 5%;
+  grid-template-areas:
+    ". icon-text1 integrify-map ."
+    ". icon2 text2 ."
+    ". text-form . ."
+    ". contact-form . .";
+  justify-items: center;
+  padding-top: 20px;
+  /* background: lightgoldenrodyellow; */
+}
+.contact-container-even-row {
+}
+.icon-text1 {
+  grid-area: icon-text1;
+  align-self: center;
+}
+.integrify-map {
+  grid-area: integrify-map;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+}
+.fa-instagram {
+  font-size: 100px;
+  color: gray;
+}
+.fa-instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-facebook {
+  font-size: 100px;
+  color: gray;
+}
+.fa-facebook:hover {
+  color: #3b579d;
+}
+.fa-twitter-square {
+  font-size: 100px;
+  color: gray;
+}
+.fa-twitter-square:hover {
+  color: #1da1f2;
+}
+.fa-map-marker-alt {
+  font-size: 100px;
+  color: red;
+}
+.text2 {
+  grid-area: text2;
+  align-self: center;
+}
+.icon2 {
+  grid-area: icon2;
+  align-self: center;
+}
+.text-form {
+  grid-area: text-form;
+  align-self: center;
+}
+.contact-form {
+  grid-area: contact-form;
+  align-self: center;
+}
+input {
+  margin-bottom: 10px;
+  width: 400px;
+  font-size: 1rem;
+  height: 30px;
+  padding: 10px;
+}
+textarea {
+  margin-bottom: 10px;
+  width: 400px;
+  font-size: 1rem;
+  padding: 10px;
+}
+.contact-para {
+  font-size: 1.5rem;
+}
+.submit-button {
+  width: 200px;
+  padding: 0px;
+  font-weight: bold;
+}
+#h1-intro {
+  font-size: 2.5rem;
+}
+.intro-p1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.intro-p2 {
+  font-size: 1.5rem;
+}
+#span-adrien {
+  color: yellow;
+}
+#span-projects {
+  color: yellow;
 }

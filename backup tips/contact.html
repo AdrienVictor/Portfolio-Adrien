@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="../index.html"> Home</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./contact.html">Contacts</a></li>
+      </ul>
+    </header>
+    <h1>Contact</h1>
+    <div class="form-container">
+      <form>
+        <div class="label-container">
+          <!-- As shown in class exemple:
+          -->
+          <label for="firstname">First Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+            required
+            pattern="[A-Z]{1}[a-z]{2,14}"
+          /><br />
+        </div>
+        <div class="label-container">
+          <input
+            type="text"
+            placeholder="Last Name"
+            required
+            minlength="2"
+            maxlength="15"
+          /><br />
+        </div>
+        <div class="label-container">
+          <input type="email" placeholder="Email" required /> <br />
+        </div>
+        <div class="label-container">
+          <input
+            type="password"
+            placeholder="Password"
+            minlength="6"
+            maxlength="32"
+          />
+          <br />
+        </div>
+        <div class="label-container"><input type="datetime-local" /><br /></div>
+        <div class="label-container">
+          <input type="number" placeholder="Age" min="18" max="75" /><br />
+        </div>
+        <div class="label-container-color">
+          <label>Favorite Color:</label> <input type="color" /><br />
+        </div>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Other" /> Other <br />
+        <label for="">Region</label>
+        <input
+          type="text"
+          pattern="[fF]innish|[sS]wedish|[dD]anish|[nN]orwegian"
+        />
+        <br />
+        <label>Country:</label>
+        <select>
+          <option value="finland">Finland </option>
+          <option value="france">France</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Korea">Korea</option>
+        </select>
+        <br />
+        <label>Skills</label> <input type="checkbox" /> Html
+        <input type="checkbox" /> CSS <input type="checkbox" /> JavaScript
+        <input type="checkbox" /> React <br />
+        <label for="">Your Message Goes Here:</label><br />
+        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Medium</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

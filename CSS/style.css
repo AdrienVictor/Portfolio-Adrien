@@ -6,6 +6,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+.white {
+  color: #fff;
+}
+
 /* ==== BODY STYLE ======================================================== */
 /* header {
   background-image: url(../ressources/images/5149.jpg);
@@ -83,47 +87,46 @@
   text-align: center;
   font-variant: small-caps;
   margin: 10px 10px;
+  font-size: 2rem;
 }
 .aboutme-para {
   text-align: center;
   margin: 20px 15px;
+  font-size: 1rem;
 }
 #mypassions {
   text-align: center;
   margin: 10px 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 #mybackground {
   text-align: center;
   margin: 10px 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .sections-container {
   /* background-color: lightgray; */
-  margin: 20px auto 20px auto;
-  padding: 10px 30px;
-  line-height: 1.5;
-  display: flex;
-  width: 80%;
+  margin-top: 50px;
+  line-height: 2.5;
+  display: grid;
+  grid-template-columns: 40px auto auto 40px;
+  grid-template-areas:
+    ". section1 section1 ."
+    ". section2 section3 .";
+  grid-gap: 20px;
+  grid-row: ". section";
 }
 .section1 {
-  flex: 1;
-  order: 1;
-  /* background-color: rgb(223, 37, 198); */
-  /* padding-left: 10px; */
-  margin-right: 15px;
-  margin-left: 15px;
-  border-radius: 5%;
-  border: 2px solid gray;
+  border-bottom: 2px solid gray;
+  grid-area: section1;
+  /* width: 80%; */
+  justify-self: center;
 }
 .section2 {
-  flex: 1;
-  /* background-color: red; */
-  /* padding-left: 10px; */
-  margin-right: 15px;
-  margin-left: 15px;
-  border-radius: 5%;
-  border: 2px solid gray;
+  border-right: 2px solid gray;
+  grid-area: section2;
+  width: 500px;
+  justify-self: right;
 }
 .mypassionslogos {
   display: flex;
@@ -132,17 +135,14 @@
 }
 
 i {
-  font-size: 40px;
-  margin: 10px;
+  font-size: 50px;
+  margin: 15px;
 }
 .section3 {
-  flex: 1;
-  /* background-color: red; */
-  order: 1;
-  margin-left: 15px;
-  margin-right: 15px;
-  border-radius: 5%;
-  border: 2px solid gray;
+  border-left: 2px solid gray;
+  grid-area: section3;
+  width: 500px;
+  justify-self: left;
 }
 .background-para {
   text-align: center;
@@ -178,61 +178,102 @@ i {
 }
 /* ===========================> SKILLS PAGE <=============================*/
 /* ==== SKILLS STYLE ==================================================== */
+.back-end-banner1 {
+  background-image: url(../ressources/images/back-end-banner-code-modified.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #myskills-intro {
   margin: 10px 10px;
   text-align: center;
   font-size: 1.5rem;
 }
+#h2-skills {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  width: 30%;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  /* background-color: lightgoldenrodyellow; */
+}
 
 .skills-container {
   display: flex;
   /* align-items: flex-end; */
-  justify-content: center;
+  justify-content: space-around;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   margin: 50px auto;
+  /* background-color: white; */
 }
 .skill-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: auto;
   /* background-color: lightsalmon; */
   text-align: center;
-  margin: 20px 30px;
-  padding: 5px;
-  border: 2px solid gray;
-  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px 30px;
+  padding: 15px;
+  box-shadow: inset -5px -5px 5px gray;
+  /* background-color: rgb(255, 255, 255); */
+  /* border: 2px solid gray; */
+  /* box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5); */
+}
+.skill-box-banner1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px 30px;
+  padding: 15px;
+  box-shadow: inset -5px -5px 5px gray;
+  /* border-left: 1px solid white;
+  border-top: 1px solid white; */
 }
 
 /* ==== Skills Logos Style ==== */
 .skill-box h2 {
   margin-top: 15px;
 }
+.h3-skills {
+  font-size: 2rem;
+  margin: 10px;
+}
+
 .html-logo {
-  width: 80px;
+  width: 150px;
 }
 .css-logo {
-  width: 80px;
+  width: 150px;
 }
 .js-logo {
-  width: 80px;
-}
-.react-logo {
-  width: 120px;
-}
-.redux-logo {
-  width: 80px;
-}
-.node-logo {
   width: 100px;
 }
+.react-logo {
+  width: 150px;
+}
+.redux-logo {
+  width: 100px;
+}
+.node-logo {
+  width: 150px;
+}
 .mongo-logo {
-  width: 130px;
+  width: 150px;
   margin-bottom: 20%;
 }
 progress {
@@ -262,6 +303,17 @@ progress[value]::-webkit-progress-value {
   border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+@-webkit-keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px;
+  }
+}
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0px;
+  }
+}
+
 progress:not([value]) {
   /* Styling here */
 }
@@ -314,7 +366,6 @@ progress:not([value]) {
   text-align: left;
   margin: 10px 10px;
   align-self: stretch;
-  border-spacing: 10px;
 }
 .fa-desktop {
   font-size: 100px;
@@ -334,6 +385,9 @@ progress:not([value]) {
   object-fit: fill;
   width: 750px;
   height: auto;
+}
+#portfolio-badge:hover {
+  transform: scale(1.1);
 }
 #h2-ongoing-projects {
   text-align: center;
@@ -367,10 +421,11 @@ progress:not([value]) {
   font-size: 1.5rem;
 }
 /* ==========================> CONTACT PAGE <================================ */
-.contact-banner {
+.banner {
   background-image: url(../ressources/images/5149.jpg);
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 100%;
 }
 .hr-intro {
   height: 10px;
@@ -484,6 +539,8 @@ textarea {
 .submit-button {
   width: 200px;
   padding: 0px;
+}
+.submit-button:hover {
   font-weight: bold;
 }
 #h1-intro {
@@ -501,5 +558,8 @@ textarea {
   color: yellow;
 }
 #span-projects {
+  color: yellow;
+}
+#span-skills {
   color: yellow;
 }

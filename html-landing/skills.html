@@ -25,40 +25,46 @@
           <div class="headers">
             <h1>
               <strong>Adrien Fernandez</strong><br />
-              <em>French</em><br /><em>Junior Full Stack Developer</em>
+              <em>Junior Full Stack Developer</em>
             </h1>
           </div>
         </div>
-        <div>
-          <img src="../ressources/images/logo.svg" alt="integrify-logo" />
+        <div class="header-navbar">
+          <ul class="navbar">
+            <li><a href="../homepage.html"> Home </a></li>
+            <li><a href="../html-landing/skills.html"> Skills</a></li>
+            <li><a href="../html-landing/projects.html"> Projects</a></li>
+            <li><a href="../html-landing/contact.html"> Contact</a></li>
+          </ul>
         </div>
       </div>
-
-      <ul class="navbar">
-        <li><a href="../homepage.html"> Home </a></li>
-        <li><a href="../html-landing/skills.html"> Skills</a></li>
-        <li><a href="../html-landing/projects.html"> Projects</a></li>
-        <li>Contact</li>
-      </ul>
     </header>
-    <h1 id="h1-skills">skills</h1>
-    <p id="myskills-intro">
-      This is the ongoing and up to date list of my skills as a Junior Full
-      Stack Developer. <br />
-      You can keep track of my coding knowledge and see the advancement of my
-      exepertise here.
-    </p>
+    <div class="banner homepage-banner">
+      <div class="intro-container contact-intro-container">
+        <h1 id="h1-intro">What Adrien <span id="span-skills">Can</span> do</h1>
+        <hr class="hr-intro hr-contact" />
+        <p class="intro-p1 intro-contact-p1">
+          My up to date skills as, <br />
+          Junior Full Stack Developer.
+        </p>
+        <p class="intro-p2 intro-contact-p2">
+          Keep track of my coding knowledge and exepertise
+        </p>
+      </div>
+    </div>
     <hr />
-    <div class="skills-container">
-      <div class="skill-box">
-        <img
-          class="html-logo"
-          src="../ressources/images/HTML5_Badge.svg"
-          alt="html5-logo"
-        />
-        <h2>HTML</h2>
-        <progress max="100" value="50"></progress>
-        <!-- <details>
+    <h2 id="h2-skills">Front End Development</h2>
+    <div class="front-end-banner1">
+      <div class="skills-container">
+        <div class="skill-box">
+          <img
+            class="html-logo"
+            src="../ressources/images/HTML5_Badge.svg"
+            alt="html5-logo"
+          />
+          <h3 class="h3-skills">HTML5</h3>
+          <progress max="100" value="50"></progress>
+          <!-- <details>
           <summary>html</summary>
           <ul>
             <li>subskill1</li>
@@ -67,70 +73,88 @@
             <li>subskill4</li>
           </ul>
         </details> -->
+        </div>
+        <div class="skill-box">
+          <img
+            class="css-logo"
+            src="../ressources/images/badge-css-3.png"
+            alt="css-logo"
+          />
+          <h3 class="h3-skills">CSS3</h3>
+          <progress max="100" value="40"></progress>
+        </div>
       </div>
-      <div class="skill-box">
-        <img
-          class="css-logo"
-          src="../ressources/images/badge-css-3.png"
-          alt="css-logo"
-        />
-        <h2>CSS</h2>
-        <progress max="100" value="40"></progress>
+      <!-- <hr /> -->
+      <h2 id="h2-skills">Back End Development</h2>
+      <div class="back-end-banner1">
+        <div class="skills-container">
+          <div class="skill-box skill-box-banner1">
+            <img
+              class="js-logo"
+              src="../ressources/images/JavaScript-logo.png"
+              alt="javascript-logo"
+            />
+            <h3 class="h3-skills white">JavaScript</h3>
+            <progress></progress>
+          </div>
+          <div class="skill-box">
+            <img
+              class="react-logo"
+              src="../ressources/images/React-icon.svg"
+              alt="React-logo"
+            />
+            <h3 class="h3-skills white">React</h3>
+            <progress></progress>
+          </div>
+          <div class="skill-box">
+            <img
+              class="redux-logo"
+              src="../ressources/images/redux-logo.svg"
+              alt="Redux.logo"
+            />
+            <h3 class="h3-skills white">Redux</h3>
+            <progress></progress>
+          </div>
+        </div>
       </div>
-      <div class="skill-box">
-        <img
-          class="js-logo"
-          src="../ressources/images/JavaScript-logo.png"
-          alt="javascript-logo"
-        />
-        <h2>JavaScript</h2>
-        <progress></progress>
+      <hr />
+      <div class="back-end-banner2">
+        <div class="skills-container">
+          <div class="skill-box">
+            <img
+              class="node-logo"
+              src="../ressources/images/Node.js_logo.png"
+              alt="Node-logo"
+            />
+            <h3 class="h3-skills">Node</h3>
+            <progress></progress>
+          </div>
+          <div class="skill-box">
+            <img
+              class="mongo-logo"
+              src="../ressources/images/mongodb-logo.svg"
+              alt="MongoDB-logo"
+            />
+            <h3 class="h3-skills">MongoDB</h3>
+            <progress></progress>
+          </div>
+        </div>
       </div>
-      <div class="skill-box">
-        <img
-          class="react-logo"
-          src="../ressources/images/React-icon.svg"
-          alt="React-logo"
-        />
-        <h2>React</h2>
-        <progress></progress>
-      </div>
-      <div class="skill-box">
-        <img
-          class="redux-logo"
-          src="../ressources/images/redux-logo.svg"
-          alt="Redux.logo"
-        />
-        <h2>Redux</h2>
-        <progress></progress>
-      </div>
-      <div class="skill-box">
-        <img
-          class="node-logo"
-          src="../ressources/images/Node.js_logo.png"
-          alt="Node-logo"
-        />
-        <h2>Node</h2>
-        <progress></progress>
-      </div>
-      <div class="skill-box">
-        <img
-          class="mongo-logo"
-          src="../ressources/images/mongodb-logo.svg"
-          alt="MongoDB-logo"
-        />
-        <h2>MongoDB</h2>
-        <progress></progress>
-      </div>
-    </div>
 
     <footer>
-      <ul class="footer-navbar">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Medium</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
+      <div class="footer-navbar">
+        <a href="https://github.com/AdrienVictor">
+          <i class="fab fa-github"></i></a>
+        <i class="fab fa-medium"><a href=""></a></i>
+        <a href="http://www.linkedin.com/in/adrien-fernandez-ab390347">
+          <i class="fab fa-linkedin"></i>
+        </a>
+    
+        <i class="fas fa-phone">+358 423 999 52</i>
+        <a href="http://www.integrify.fi/">
+          <img class="footer-integrify" src="../ressources/images/logo.svg" alt="integrify-logo" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -64,10 +64,10 @@
   text-decoration: none;
   color: white;
 }
-.active {
+#active {
   color: #b401b2;
 }
-.active:hover {
+#active:hover {
   color: white;
 }
 

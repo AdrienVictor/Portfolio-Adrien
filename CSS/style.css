@@ -87,7 +87,7 @@
   font-size: 30px;
 }
 
-/* ========================================== HOMEPAGE STYLE ================================= */
+/* ========================================== INDEX STYLE ================================= */
 #h1-home {
   font-variant: small-caps;
   font-size: 3rem;
@@ -99,7 +99,7 @@
   font-size: 3rem;
   text-align: auto;
 }
-#intro-homepage {
+#intro-index {
   margin: 10px 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -549,7 +549,7 @@ textarea {
 .intro-p2 {
   font-size: 1.5rem;
 }
-#span-homepage {
+#span-index {
   color: yellow;
 }
 #span-adrien {

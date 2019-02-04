@@ -1,6 +1,6 @@
 # Portfolio
 
-This to learn Git, GitHub, Html, and Css by building a portfolio.
+This is my first personal portfolio created with HTML5 and CSS3.
 
 # Demo
 

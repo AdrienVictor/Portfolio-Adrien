@@ -61,6 +61,22 @@
   color: white;
   transition: 0.5s;
 }
+/* ========================== GENERAL STYLE ============================== */
+.banner {
+  background-image: url(../assets/images/banner_common.jpg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.hr-intro {
+  height: 10px;
+  width: 50px;
+  background: yellow;
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 /* ===== FOOTER SYLE ======================================================*/
 .footer-navbar {
   /* width: 100%; */
@@ -178,7 +194,7 @@ i {
   color: #fff;
 }
 .back-end-banner1 {
-  background-image: url(/assets/images/back-end-banner-code-modified.jpg);
+  background-image: url(../assets/images/back-end-banner-code-modified.jpg);
   /* linear-gradient (to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
   background-size: cover;
   padding-top: 20px;
@@ -418,21 +434,7 @@ progress[value]::-webkit-progress-value {
   font-size: 1.5rem;
 }
 /* ===========================================> CONTACT PAGE <================================ */
-.banner {
-  background-image: url(../assets/images/5149.jpg);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  width: 100%;
-}
-.hr-intro {
-  height: 10px;
-  width: 50px;
-  background: yellow;
-  border-radius: 20px;
-  border: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
+
 .contact-intro-container {
   margin-left: 5%;
   padding: 15px;

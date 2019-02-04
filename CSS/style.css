@@ -57,7 +57,7 @@
 }
 .navbar li a:hover {
   color: #b401b2;
-  transition: 0, 5s;
+  transition: 0.5s;
   /* text-transform: uppercase; */
 }
 .navbar li a {
@@ -69,6 +69,7 @@
 }
 #active:hover {
   color: white;
+  transition: 0.5s;
 }
 
 /* === SECTIONS STYLE ======================================================= */
@@ -389,6 +390,7 @@ progress[value]::-webkit-progress-value {
 }
 #portfolio-badge:hover {
   transform: scale(1.1);
+  transition: 0.5s;
 }
 #h2-ongoing-projects {
   text-align: center;
@@ -522,14 +524,14 @@ progress[value]::-webkit-progress-value {
 }
 input {
   margin-bottom: 10px;
-  width: 400px;
+  width: 25vw;
   font-size: 1rem;
   height: 30px;
   padding: 10px;
 }
 textarea {
   margin-bottom: 10px;
-  width: 400px;
+  width: 25vw;
   font-size: 1rem;
   padding: 10px;
 }
@@ -554,6 +556,9 @@ textarea {
 .intro-p2 {
   font-size: 1.5rem;
 }
+#span-homepage {
+  color: yellow;
+}
 #span-adrien {
   color: yellow;
 }
@@ -570,6 +575,10 @@ textarea {
     margin-bottom: 0;
     margin-top: 0;
   }
+  .profilepicture {
+    margin: 0;
+  }
+
   .navbar {
     border-radius: 0;
   }
@@ -601,6 +610,7 @@ textarea {
   }
   .mypassionslogos {
     display: block;
+    text-align: center;
   }
   .skills-container {
     display: flex;
@@ -642,10 +652,27 @@ textarea {
     justify-items: center;
     text-align: center;
   }
+
   .contact-item {
-    margin: 40px 20px;
+    margin: auto;
+    text-align: center;
+  }
+  input {
+    margin-bottom: 10px;
+    width: 80vw;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  textarea {
+    margin-bottom: 10px;
+    width: 80vw;
+    font-size: 1rem;
+    padding: 10px;
   }
   .submit-button {
-    width: 400px;
+    width: 80vw;
+  }
+  .footer-navbar i {
+    font-size: 20px;
   }
 }

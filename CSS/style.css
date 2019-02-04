@@ -6,16 +6,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-.white {
-  color: #fff;
-}
-
-/* ==== BODY STYLE ======================================================== */
-/* header {
-  background-image: url(../ressources/images/5149.jpg);
-  width: 100%;
-} */
-
 /* === HEADER STYLE ========================================================= */
 .profilepicture {
   width: 200px;
@@ -71,8 +61,33 @@
   color: white;
   transition: 0.5s;
 }
+/* ===== FOOTER SYLE ======================================================*/
+.footer-navbar {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  /* opacity: 0.8; */
+  /* padding: 10px; */
+  margin-top: 50px;
+}
+.footer-navbar i {
+  text-decoration: none;
+  color: white;
+}
+.footer-integrify {
+  height: 50px;
+  width: auto;
+}
+.fa-phone {
+  font-size: 20px;
+}
+.fab {
+  font-size: 30px;
+}
 
-/* === SECTIONS STYLE ======================================================= */
+/* ========================================== HOMEPAGE STYLE ================================= */
 #h1-home {
   font-variant: small-caps;
   font-size: 3rem;
@@ -157,33 +172,11 @@ i {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* ===== FOOTER SYLE ======================================================*/
-.footer-navbar {
-  /* width: 100%; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  /* opacity: 0.8; */
-  /* padding: 10px; */
-  margin-top: 50px;
+/* ===================================> SKILLS PAGE STYLE <====================================*/
+/* ======== Skills content style ========= */
+.white {
+  color: #fff;
 }
-.footer-navbar i {
-  text-decoration: none;
-  color: white;
-}
-.footer-integrify {
-  height: 50px;
-  width: auto;
-}
-.fa-phone {
-  font-size: 20px;
-}
-.fab {
-  font-size: 30px;
-}
-/* ===========================> SKILLS PAGE <=============================*/
-/* ==== SKILLS STYLE ==================================================== */
 .back-end-banner1 {
   background-image: url(../ressources/images/back-end-banner-code-modified.jpg);
   background-size: cover;
@@ -251,7 +244,7 @@ i {
   border-top: 1px solid white; */
 }
 
-/* ==== Skills Logos Style ==== */
+/* ============ Skills Logos Style ========= */
 .skill-box h2 {
   margin-top: 15px;
 }
@@ -320,7 +313,7 @@ progress[value]::-webkit-progress-value {
   }
 }
 
-/* =========================> PROJECTS PAGE <================================ */
+/* =========================================> PROJECTS PAGE <================================ */
 .project-container {
   display: grid;
   grid-template-columns: 60px auto auto 60px;
@@ -423,7 +416,7 @@ progress[value]::-webkit-progress-value {
   text-align: center;
   font-size: 1.5rem;
 }
-/* ==========================> CONTACT PAGE <================================ */
+/* ===========================================> CONTACT PAGE <================================ */
 .banner {
   background-image: url(../ressources/images/5149.jpg);
   padding-top: 100px;
@@ -443,7 +436,7 @@ progress[value]::-webkit-progress-value {
   margin-left: 5%;
   padding: 15px;
 }
-/* ======================== CONTACT GRID STYLE ============================== */
+/* ====== Contact grid style ========= */
 .contact-container {
   display: grid;
   grid-gap: 40px 20px;
@@ -462,10 +455,26 @@ progress[value]::-webkit-progress-value {
   grid-area: icon-text1;
   align-self: center;
 }
+.text2 {
+  grid-area: text2;
+  align-self: center;
+}
+.icon2 {
+  grid-area: icon2;
+  align-self: center;
+}
+.text-form {
+  grid-area: text-form;
+  align-self: center;
+}
+.contact-form {
+  grid-area: contact-form;
+  align-self: center;
+}
 .integrify-map {
   grid-area: integrify-map;
 }
-
+/* ======== Contact content style ======= */
 .icon1 {
   display: flex;
   justify-content: center;
@@ -505,22 +514,6 @@ progress[value]::-webkit-progress-value {
 .fa-map-marker-alt {
   font-size: 100px;
   color: red;
-}
-.text2 {
-  grid-area: text2;
-  align-self: center;
-}
-.icon2 {
-  grid-area: icon2;
-  align-self: center;
-}
-.text-form {
-  grid-area: text-form;
-  align-self: center;
-}
-.contact-form {
-  grid-area: contact-form;
-  align-self: center;
 }
 input {
   margin-bottom: 10px;
@@ -568,7 +561,7 @@ textarea {
 #span-skills {
   color: yellow;
 }
-/* ============================== MEDIA QUERIES =============================IT */
+/* ============================================== MEDIA QUERIES ============================= */
 @media (max-width: 900px) {
   .header-container {
     display: block;

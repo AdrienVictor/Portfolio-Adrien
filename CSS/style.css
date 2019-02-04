@@ -63,7 +63,7 @@
 }
 /* ========================== GENERAL STYLE ============================== */
 .banner {
-  background-image: url(../assets/images/banner_common.jpg);
+  background-image: url(../Assets/images/banner_common.jpg);
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
@@ -194,7 +194,7 @@ i {
   color: #fff;
 }
 .back-end-banner1 {
-  background-image: url(../assets/images/back-end-banner-code-modified.jpg);
+  background-image: url(../Assets/images/back-end-banner-code-modified.jpg);
   /* linear-gradient (to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
   background-size: cover;
   padding-top: 20px;
